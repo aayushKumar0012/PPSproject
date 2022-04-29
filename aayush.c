@@ -10,32 +10,31 @@ int main()
 	printf("Press 3 to calculate area of sphere\n"); 
 	printf("Enter your choice:\n"); 
 	choice = input(); 
-	switch (choice) { 
-	case 1: { 
+	if (choice==1) { 
 		printf("Enter radius:\n"); 
 		num = input(); 
 		result = 3.14 * num * num; 
 		printf("Area of circle="); 
 		output(result); 
-		break; 
+		 
 	} 
-	case 2: { 
+	else if (choice==2) { 
 		printf("Enter side of square:\n"); 
 		num = input(); 
 		result = num * num; 
 		printf("Area of square="); 
 		output(result); 
-		break; 
+		
 	} 
-	case 3: { 
+	else if (choice == 3) { 
 		printf("Enter radius:\n"); 
 		num = input(); 
 		result = 4 * (3.14 * num * num); 
 		printf("Area of sphere="); 
 		output(result); 
-		break; 
+		
 	} 
-	default: 
+	else { 
 		printf("wrong Input\n"); 
 	} 
 	return 0; 
